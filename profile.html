@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="home.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="chat.html">Chat</a>
+        <a href="profile.html">User Profile</a>
+    </div>
+    <div>
+        <button id="logout">Logout</button>
+    </div>
+</nav>
+
+<div>
+    <div id="user-info"></div>
+
+
+    <div class="profile-container">
+        <h2 class="h1">User Profile</h2>
+
+
+        <div class="profile-picture-section">
+            <img class="size" src="https://static.vecteezy.com/system/resources/previews/019/900/322/non_2x/happy-young-cute-illustration-face-profile-png.png" id="profileImage" alt="Profile Picture">
+            <h3>Change Profile Picture</h3>
+            <form id="changeProfilePictureForm">
+                <div>
+                    <input type="file" id="profileImageInput" accept="image/*">
+                </div>
+                <input class="back-button" type="submit" value="Change Picture">
+            </form>
+        </div>
+
+
+        <h3>Change Password</h3>
+        <form id="changePasswordForm">
+            <div>
+                <label for="currentPassword">Old Password</label>
+                <input type="password" id="currentPassword" required>
+            </div>
+            <div>
+                <label for="newPassword">New Password</label>
+                <input type="password" id="newPassword" required>
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm New Password</label>
+                <input type="password" id="confirmPassword" required>
+            </div>
+            <input class="back-button" type="submit" value="Change Password">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
